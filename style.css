@@ -1,3 +1,53 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
 h1 {
+    color: blue;
+    margin: 20px 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+}
+
+.box {
+    background-color: lightblue;
+    padding: 20px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+/* Tablet View (772px) */
+@media (min-width: 772px) {
+    .container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .box {
+        width: 45%;
+        height: auto;
+    }
+
+    img {
+        max-height: 30vh;
+    }
+}
+
+/* Large Screen View (998px) */
+@media (min-width: 998px) {
+    .box {
+        width: 30%;
+    }
+}h1 {
     color: blue;
 }
